@@ -1,0 +1,25 @@
+<div class="head">
+
+      <div class="sc-bdvvtL sc-hKwDye sc-ezHhwS dKBXEK eBmiVY gLlFyr">
+         <img loading="lazy" alt="doconLogo" src="https://emr-assets.docon.co.in/patient-react/images/docon.svg" class="sc-bdvvtL dKBXEK sc-BHvUt fJlZte">
+         <img loading="lazy" alt="help" src="https://emr-assets.docon.co.in/patient-react/images/help.svg" id="support/help" class="sc-bdvvtL hVRysI sc-BHvUt fJlZte">
+         <img loading="lazy" alt="logout" src="https://emr-assets.docon.co.in/patient-react/images/logout.svg" id="logout" class="sc-bdvvtL dKBXEK sc-BHvUt fJlZte"routerLink="/logout">
+        </div>
+</div>
+ 
+<mat-drawer-container class="example-container">
+      <mat-drawer class="sidenav" mode="side" opened>
+            <div class="home"> 
+                  <h4 routerLinkActive="active" ><i class="fa fa-home "style="font-size:24px">&nbsp;&nbsp;</i> <a  class="home"routerLink="home" routerLinkActive="active" >Home</a> </h4> 
+                  <h4 routerLinkActive="active" ><i class="fa fa-medkit"style="font-size:24px">&nbsp;&nbsp;</i> <a  class="home" routerLink="mydoctors" routerLinkActive="active" >My Doctors</a> </h4> 
+                  <h4 routerLinkActive="active" ><i class="fa fa-book "style="font-size:24px">&nbsp;&nbsp;</i><a  class="home" routerLink="records" routerLinkActive="active" >Records</a>     </h4> 
+                  <h4 routerLinkActive="active" ><i class="fa fa-book "style="font-size:24px">&nbsp;&nbsp;</i><a  class="home"routerLink="appointment"routerLinkActive="active" >appointment</a>     </h4> 
+                  <h4 routerLinkActive="active" ><i class="fa fa-support "style="font-size:24px">&nbsp;&nbsp;</i><a  class="home"routerLink="support" routerLinkActive="active" >Support</a>     </h4> 
+            </div>
+      </mat-drawer>
+    <mat-drawer-content> 
+      
+        <router-outlet></router-outlet>
+        </mat-drawer-content>
+  </mat-drawer-container>
+ 

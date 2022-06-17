@@ -1,0 +1,74 @@
+ 
+
+.mat-dialog-title{
+    margin: 0px;
+    padding: 10px;
+     border-radius: 5px;
+    background-color: #0289FF;
+ }
+ #exampleModalLabel{
+
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 18px;
+    word-spacing: 2px;
+ }
+ .date{
+        text-align: center;
+        size: 20px;
+ }
+
+ .morning{
+
+    letter-spacing: inherit;
+    font-weight: inherit;
+    font-size: 21px;
+    line-height: 30px;
+    color: rgb(0, 41, 77);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+     
+}
+.date{
+    padding:10px;
+    background-color:  rgb(234, 237, 241);
+    border-radius: 5px;
+}
+
+
+.time1{
+    padding: 12px;
+    border: 1px solid rgb(134, 133, 133);
+    border-radius: 10px;
+    gap: 0px 6px;
+    padding: 7px 8px;
+      flex: 0 0 100px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid rgb(225, 224, 230);
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 0px;
+    cursor: pointer;
+          
+ }
+ 
+ .secondary{
+    background-color:rgb(87, 101, 146);
+    margin-top: 10px;
+  }
+
+  .close{
+    background-color:rgb(146, 87, 141);
+    margin-bottom: 10px;
+  }
+
+  .slottimingsbutton{
+      display: flex;
+      display: inline-block;
+      align-items: flex-end;
+  }

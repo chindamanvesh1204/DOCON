@@ -1,0 +1,104 @@
+
+.header-1{
+    height: 56px;
+    background-color: #0089ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+   width: 100%;
+ 
+}
+.logo{
+     padding-left: 5px;
+}
+.header-2{
+    height: 43px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-size: medium;
+    font-weight: 700;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    background: linear-gradient(to right,#bd3381,#ee583f);
+}
+ 
+.promoAction  {
+    border: 0.75px solid #fff;
+    border-radius: 15px;
+    background-color: #1db954;
+    padding: 8px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.whiteFont {
+    color: #fff;
+    font-weight: 500;
+     cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    height: 40px;
+     padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+     
+}
+ 
+ 
+ 
+ .maintitle  {
+    display: flex;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -.3px;
+ }
+ .subtitle  {
+    color: rgba(23,23,77,.95);
+    font-size: 24px;
+    padding: 16px 0 0;
+    line-height: 28px;
+}
+
+ 
+ 
+.firstGroup {
+    padding: 40px 
+ }
+
+  .desktopfirstCardImage {
+     width:100%;
+     height:100%;
+}
+ 
+
+.docon-btn  {
+    background: #0089ff;
+    border: 1px solid #0089ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    height: 40px;
+     padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-left:10px ;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.boddy{
+    padding:40px;
+}

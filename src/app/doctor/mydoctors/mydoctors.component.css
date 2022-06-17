@@ -1,0 +1,38 @@
+
+.image1{
+    border-radius: 50px;
+
+}
+.testAA {
+    font-size: 36px;
+    line-height: 40px;
+  
+}
+.container{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    background-color: #FFFFFF;
+    width: 95%;
+    padding :5px;
+    border-bottom:1px solid rgb(226, 218, 218) ;
+    border-radius: 5px;
+    line-height: 1rem;
+    margin-bottom: 20px;
+    
+ 
+}
+.cordiologist{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+ }
+ 
+ .anushka{
+     background-color: #fffefe;
+ }
+ 
+ /* [_nghost-c10] mat-tab-body-wrapper[_ngcontent-c15] { 
+    height: 50%;
+ } */
+ /* mat-tab-body-wrapper {
+    height: 100%; */
+ /* } */

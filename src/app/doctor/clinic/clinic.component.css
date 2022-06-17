@@ -1,0 +1,111 @@
+
+ 
+ .cliniclogo{
+     background-color: #FEC333;
+     padding: 10px;
+     border-radius: 25px;
+     color: white;
+ 
+ }
+
+ .headcontent{
+    padding-left:20px;
+    font-weight: 200;
+    letter-spacing: inherit;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+    color: rgb(0, 41, 77);
+  }
+
+
+.container-fluid{
+   
+    border-bottom:1px solid rgb(196, 193, 193);
+    line-height:10px;
+    padding:10px;
+}
+.next{
+  font-weight: 500;
+  word-spacing: 5px;
+}
+.address{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.today{
+    font-size: 20px;
+   font-weight: 600;
+   padding: 10px;
+}
+.clinic{
+
+    padding-left: 15px;
+}
+
+
+.viewdirections{
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.viewalltimings{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.call{
+    padding:10px;
+    background-color:#0089ff;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+     
+}
+.book {
+    padding:10px;
+    background-color:#0089ff;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+     
+}
+ .time1{
+     padding: 12px;
+     border: 1px solid rgb(134, 133, 133);
+     border-radius: 10px;
+     font-weight: 700;
+  }
+
+.more{
+    padding: 10px;
+     border-radius: 10px;
+    font-weight: 700;
+    font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+     
+.timingslot{
+    display: flex;
+    margin: 5px 0px 8px;
+    overflow: auto;  
+    width: 100%;
+    margin-bottom: 8px;
+    gap: 10px 12px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+
+}
+  
+.example-spacer {
+    flex: 1 1 auto;
+  }

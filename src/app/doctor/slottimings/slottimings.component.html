@@ -1,0 +1,132 @@
+ 
+   <div class="mat-dialog-title" >  
+
+              <h5 class="modal-title" id="exampleModalLabel">Dr A A Clinic</h5>
+   </div>
+    <div class="date" >  
+         <input type="date">
+    </div>
+        <div mat-dialog-content> 
+          <h2 class="morning"><svg aria-hidden="true" focusable="false" role="img" fill="currentColor" preserveAspectRatio="xMidYMid meet" data-icon="MorningIcon" viewBox="0 0 16 16" width="30" height="30" class="sc-bdvvtL sc-gfXuXe dKBXEK sc-bvFjSx ezRJyU">
+              <path d="M15.5,11H10.21L8.35,9.16a.5.5,0,0,0-.71,0L5.79,11H.5a.5.5,0,0,0,0,1H6a.5.5,0,0,0,.35-.15L8,10.22l1.65,1.65A.5.5,0,0,0,10,12h5.5a.5.5,0,0,0,0-1Z"></path>
+              <path d="M3.42,10h2L6.94,8.45a1.5,1.5,0,0,1,2.12,0L10.62,10h2a5,5,0,1,0-9.16,0Z"></path>
+              <path d="M8,2a.5.5,0,0,0,.5-.5v-1a.5.5,0,1,0-1,0v1A.5.5,0,0,0,8,2Z"></path>
+              <path d="M.5,8.51h1a.5.5,0,0,0,0-1H.5a.5.5,0,0,0,0,1Z"></path>
+              <path d="M14.5,8.51h1a.5.5,0,0,0,0-1h-1a.5.5,0,0,0,0,1Z"></path>
+              <path d="M3,3.77a.5.5,0,1,0,.71-.71L3,2.36a.5.5,0,0,0-.71.71Z"></path>
+              <path d="M12.6,3.92A.5.5,0,0,0,13,3.77l.71-.71A.5.5,0,0,0,13,2.36l-.71.71a.5.5,0,0,0,.35.85Z"></path>
+            </svg>  MORNING</h2>
+<table>
+
+  <div class="contianer">
+  <div class="timingslot">
+      <tr>                 <td>
+                    <div class="time1">
+                        <div *ngFor="let x of jsondata">
+                        {{x.eight}}
+                    
+                    </div>
+                    </div>  
+                </td>
+                <td>
+                        <div class="time1">
+                            <div *ngFor="let x of jsondata">
+                            {{x.eightthirty}}
+                        
+                        </div>
+                        </div> 
+                </td>
+
+            <td>
+                <div class="time1">
+                    <div *ngFor="let x of jsondata">
+                    {{x.nine}}
+                
+                </div>
+                </div> 
+            </td>
+
+
+                <td>
+                     <div class="time1">
+                        <div *ngFor="let x of jsondata">
+                            {{x.ninethirty}}
+                        </div>
+                    </div>
+                </td>
+            <td>
+   
+                <div class="time1">
+                    <div *ngFor="let x of jsondata">
+                        {{x.ten}}
+                </div>
+                </div> 
+                
+           </td>
+    </tr>
+     <tr>
+                <td>
+                    <div class="time1">
+                        <div *ngFor="let x of jsondata">
+                            {{x.tenthirty}}
+                        </div>
+                    </div>  
+
+                </td>
+
+             <td>
+                    
+                    <div class="time1">
+                    <div *ngFor="let x of jsondata">
+                        {{x.eleven}}
+                </div>
+                </div> 
+                
+             </td>
+
+            <td>
+
+                <div class="time1">
+                    <div *ngFor="let x of jsondata">
+                        {{x.eleventhirty}}
+                     </div>
+                </div> 
+
+            </td>
+    </tr>
+     <tr> 
+            <h2 class="morning"><svg aria-hidden="true" focusable="false" role="img" fill="currentColor" preserveAspectRatio="xMidYMid meet" data-icon="MorningIcon" viewBox="0 0 16 16" width="30" height="30" class="sc-bdvvtL sc-gfXuXe dKBXEK sc-bvFjSx ezRJyU">
+                <path d="M15.5,11H10.21L8.35,9.16a.5.5,0,0,0-.71,0L5.79,11H.5a.5.5,0,0,0,0,1H6a.5.5,0,0,0,.35-.15L8,10.22l1.65,1.65A.5.5,0,0,0,10,12h5.5a.5.5,0,0,0,0-1Z"></path>
+                <path d="M3.42,10h2L6.94,8.45a1.5,1.5,0,0,1,2.12,0L10.62,10h2a5,5,0,1,0-9.16,0Z"></path>
+                <path d="M8,2a.5.5,0,0,0,.5-.5v-1a.5.5,0,1,0-1,0v1A.5.5,0,0,0,8,2Z"></path>
+                <path d="M.5,8.51h1a.5.5,0,0,0,0-1H.5a.5.5,0,0,0,0,1Z"></path>
+                <path d="M14.5,8.51h1a.5.5,0,0,0,0-1h-1a.5.5,0,0,0,0,1Z"></path>
+                <path d="M3,3.77a.5.5,0,1,0,.71-.71L3,2.36a.5.5,0,0,0-.71.71Z"></path>
+                <path d="M12.6,3.92A.5.5,0,0,0,13,3.77l.71-.71A.5.5,0,0,0,13,2.36l-.71.71a.5.5,0,0,0,.35.85Z"></path>
+              </svg>  AFTERNOON
+            </h2>
+     </tr>
+       <tr> 
+
+            <td>         
+                       <div class="time1">
+                         <div *ngFor="let x of jsondata">
+                        {{x.twel}}
+                </div>
+                </div> 
+                
+            </td>
+        </tr>
+                      
+  </div>
+                
+            
+        </div>
+     </table>
+        
+     <div class="slottimingsbutton" mat-dialog-actions>
+        <span>   <button  class="close" mat-button mat-dialog-close>Close</button></span>
+        <span>   <button  style="margin-left:10px" class="secondary"mat-button (click)="openconfirm()">confirm</button></span>
+        </div>
+            
+       

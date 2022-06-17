@@ -1,0 +1,31 @@
+.content{
+    width:700px;
+    font-size: 20px;
+     margin: auto;
+     background-color: #ffff;
+     padding: 2% 2%;
+     line-height:30px;
+     opacity:90%;
+
+}
+text{
+    height:400px;
+}
+
+input::text{
+    width: 80px;
+}
+.logo{
+    padding-left: 220px;
+    width: 280px;
+    height: 50px;
+
+}
+nav{
+    height: 50px;
+
+}
+.save{
+    padding-left: 95%;
+
+}

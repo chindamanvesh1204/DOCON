@@ -1,0 +1,130 @@
+
+
+
+ <div class="container-fluid">
+    <table>
+           <td><i class=" cliniclogo fa fa-home" style="font-size:24px"></i></td> 
+
+                <td class = headcontent> 
+                    <div *ngFor="let x of jsondata">
+                        <p>{{x.hospitalname}}</p>
+                        <h4>{{x.hospitaladdress}}</h4>
+                    </div>
+                </td>
+
+    </table>
+</div>
+
+
+<div class="container-fluid">
+    <table>
+        <td> <h3 class="next"> {{nextavalible}} {{date | date: 'dd'}}/{{date | date:'MM'}}/{{date | date: 'yyy'}}</h3> </td>
+   </table>
+ 
+       
+        <div class="timingslot">
+            <div class="time1">
+                <div *ngFor="let x of jsondata"mat-button (click)="openslottimings()">
+                {{x.eight }}
+            
+            </div>
+            </div>  
+            <div class="time1">
+                <div *ngFor="let x of jsondata"mat-button (click)="openslottimings()">
+                {{x.eightthirty}}
+            
+            </div>
+            </div> 
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                {{x.nine}}
+            
+            </div>
+            </div> 
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                    {{x.ninethirty}}
+            </div>
+            </div>   
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                    {{x.ten}}
+            </div>
+            </div>  
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                    {{x.tenthirty}}
+            </div>
+            </div>  
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                    {{x.eleven}}
+            </div>
+            </div>  
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                    {{x.eleventhirty}}
+            </div>
+            </div>  
+            <div class="time1">
+                <div *ngFor="let x of jsondata">
+                    {{x.twel}}
+            </div>
+            </div>  
+                <div class="more">MORE</div>   
+        </div>
+            
+        
+    </div>
+ 
+ <div class="container-fluid">
+
+     <div class="row">
+         <div class="col-sm-6">
+                    <p class="address">Address</p>
+                    <div *ngFor="let x of jsondata">
+                     <h3>{{x.hospitaladdress}}</h3>
+                    </div>
+                    <a  class="viewdirections" >View Directions</a>  
+         </div>
+        <div class="col-sm-6">
+                
+                      <p class="today">Today </p>
+                      <div></div>
+                      <h3>8:00AM to 6:00PM</h3>
+                      <a  class="viewalltimings" (click)="openDialog()" >view all timings</a>  
+
+        </div>
+     </div>
+
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-6">
+                   <p class="address">Consultation</p>
+                  <h4 class="clinic"> In-Clinic Consult: ₹ 1 </h4>
+        </div>
+       <div class="col-sm-6">
+       </div>
+    </div>
+
+</div>
+
+ 
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-8"style="padding:20px"></div>
+
+        <div class="col-sm-2 call" >  &nbsp;<span><i class="fa fa-phone" style="font-size:16px"></i> call</span></div>
+        <div class="col-sm-2 book"data-bs-toggle="modal" data-bs-target="#exampleModal" mat-button (click)="openDialog()"> <i class="fa fa-calendar" style="font-size:16px"></i> &nbsp; <span>Book</span> </div>
+                
+    </div>
+
+</div>
+
+ 
+ 
+ 

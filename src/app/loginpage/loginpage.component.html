@@ -1,0 +1,103 @@
+
+<div classs="container">
+  <div class="row">
+  
+     <div class="col-sm-6" >
+       <div class="czol">
+         <div class="doclogo">
+           <img src="https://emr-assets.docon.co.in/patient-react/images/docon.svg">
+         </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="1000">
+            <img  src="https://emr-assets.docon.co.in/patient-react/images/slider_img_1.svg" class="d-block " alt="...">
+            
+            <h4 class="crusltext">Online Appointment</h4><br>
+            <p class="ptext"> Book appointment and with the doctors who are </p>
+                 <p class="ptext">experienced and trowthly</p>
+            
+          </div>
+          <div class="carousel-item ">
+            <img   src="https://emr-assets.docon.co.in/patient-react/images/slider_img_2.svg" class="d-block " alt="...">
+            <h4 class="crusltext">Digital Prescriptions</h4><br>
+            <p class="ptext"> Get a valid digital prescription right ofter </p>
+                 <p class="ptext">your consultation</p>
+          </div>
+          <div class="carousel-item">
+            <img  src="https://emr-assets.docon.co.in/patient-react/images/slider_img_3.svg" class="d-block " alt="...">
+            <h4 class="crusltext">Health Records</h4><br>
+            <p class="ptext"> Maintain your and yours family's health </p>
+                 <p class="ptext">records at one place</p>
+          </div>
+
+          <div class="carousel-item">
+            <img  src="https://emr-assets.docon.co.in/patient-react/images/slider_img_4.svg" class="d-block " alt="...">
+            <h4 class="crusltext">Video consultation</h4><br>
+            <p class="ptext"> consult with your doctor through a video call</p>
+                 <p class="ptext">experienced and trowthly</p>
+          </div>
+        </div>
+      </div>
+</div>
+     </div>
+        <div class="col-sm-6 loginpage">
+          
+ <mat-card>
+  <mat-card-content>
+    <div class="header">
+      <P>Sign Into Your Account </P>
+    </div>
+    <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Enter email address" required
+           #email />
+          <mat-error *ngIf="!loginForm.controls['email'].valid">
+              Email is required
+            </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <span>
+          <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+        </span>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'" required />
+          <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>
+              {{hide ? 'visibility_off' : 'visibility'}}
+          </mat-icon>
+      </button>
+      <mat-error *ngIf="!loginForm.controls['password'].valid">
+          Password is required
+        </mat-error>
+      </mat-form-field>
+      </div>
+      <button mat-flat-button color="primary">Login</button>
+    </form>
+
+    <div class="button-row">
+      <p>Create New Account</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+ 
+           <!-- <button type="button" routerLink="/sidenav" class="btn btn-primary btn-lg btn-block btn1">continue</button>   -->
+             
+        </div>
+           
+    </div>
+  </div>
+  
+  
+
+
+
+

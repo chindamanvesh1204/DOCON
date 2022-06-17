@@ -1,0 +1,28 @@
+ 
+
+ <div class="container">
+   <h1 class="createpatient">{{actionhead}}</h1>
+
+
+    <form [formGroup]="loginfrm" #userconfirm="ngForm" (ngSubmit)="postuserinfo(userconfirm.value)">
+             <p>Firstname</p><input type ="text" name="firstname"id="firstname" formControlName="firstname" class="form-control"><br> 
+             <p>Lastname</p><input type ="text"name="lastname"id="lastname"formControlName="lastname"class="form-control"><br>
+             <p>Dateof birth</p><input type ="date"name=" date"id="date"formControlName="date"class="form-control"> <br>
+          <p>Gender</p>
+                      <mat-radio-group aria-label="Select an option"name=" gender"id="gender"formControlName="gender"class="form-control" >   
+                          <mat-radio-button value="male">Male </mat-radio-button>
+                          <mat-radio-button value="female">Female </mat-radio-button>
+                          <mat-radio-button value="other">Other </mat-radio-button>
+                      </mat-radio-group>
+                      <ul *ngFor="let x of jsondata" formControlName="time" name="time" id="time">
+                        {{x.eight }}
+                    
+                      </ul>
+          <br><br>
+          <button mat-raised-button color="primary">{{actionbtn}}</button>
+      </form>
+</div>
+
+<div class="time1">
+   
+</div>  

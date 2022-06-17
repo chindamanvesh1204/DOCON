@@ -1,0 +1,22 @@
+  
+      <h4 class="navhead"><i class="fa fa-arrow-left" style="font-size:18px; margin-right: 5px;"></i>DoctorProfile</h4> 
+
+  <div class="container-fluid">
+  
+    <form class="d-flex">
+         <input type="text" class="form-control"  placeholder="search products" [(ngModel)]="searchTerm" (keyup)="search($event)" >        
+    </form>
+
+  </div>
+<!-- 
+
+   <div class="zeroCase">
+    
+      <img loading="lazy" alt="alt" src="https://emr-assets.docon.co.in/patient-react/images/empty_search.svg" class="sc-bdvvtL demjZv sc-BHvUt fJlZte">
+      <h2 color="#5c768d"  >Search for your favourite doctor</h2>
+  
+  </div>  -->
+
+
+<router-outlet></router-outlet>
+ 

@@ -1,0 +1,16 @@
+.d-flex{
+    width: 100%;
+}
+
+.navhead{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .zeroCase {
+    padding: 16px;
+    height: inherit;
+    text-align: center;
+    place-content: center;
+}
