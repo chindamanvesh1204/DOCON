@@ -10,7 +10,7 @@ export class UserService {
 
 
 getdata(){
- return this.api.get('http://localhost:3000/posts')
+ return this.api.get('http://localhost:3000/posts' ) 
 }
 
 getcommentsdata(){
