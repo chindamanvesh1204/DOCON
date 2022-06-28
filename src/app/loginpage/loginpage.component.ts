@@ -24,6 +24,7 @@ export class LoginpageComponent implements OnInit {
     password:new FormControl ('', [Validators.required,
                                    Validators.minLength(5),
                                    Validators.maxLength(10),
+                                   //abcd//
                                      
                                                 
                                   
