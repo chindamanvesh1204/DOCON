@@ -18,12 +18,14 @@ export class LoginpageComponent implements OnInit {
                                  Validators.minLength(5),
                                  Validators.maxLength(10),
                                  Validators.required,
+                                 // Validator.pattern//
                           
                               ]),
     password:new FormControl ('', [Validators.required,
                                    Validators.minLength(5),
                                    Validators.maxLength(10),
-                                   
+                                       // Validator.pattern//
+                                           // Validator.pattern//
                                 ])
   })
 
