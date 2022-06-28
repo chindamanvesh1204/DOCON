@@ -12,7 +12,8 @@ const routes: Routes = [
   {path:"loginpage",component:LoginpageComponent},
   {path:"test",component:TestComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'},
-  {path:'sidenav',component:SidenavComponent,canActivate:[LoginpageGuard]}
+  {path:'sidenav',component:SidenavComponent,canActivate:[LoginpageGuard]}, 
+ // {path:"test" ,loadChildren:()=>import('./doctor/doctor.module').then(m=>m.DoctorModule)},
 
 
 ];

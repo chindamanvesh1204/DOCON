@@ -3,7 +3,7 @@
  <div class="container">
    <h1 class="createpatient">{{actionhead}}</h1>
 
-
+ 
     <form [formGroup]="loginfrm" #userconfirm="ngForm" (ngSubmit)="postuserinfo(userconfirm.value)">
              <p>Firstname</p><input type ="text" name="firstname"id="firstname" formControlName="firstname" class="form-control"><br> 
              <p>Lastname</p><input type ="text"name="lastname"id="lastname"formControlName="lastname"class="form-control"><br>

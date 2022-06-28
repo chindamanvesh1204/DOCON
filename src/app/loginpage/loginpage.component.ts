@@ -13,22 +13,29 @@ export class LoginpageComponent implements OnInit {
 @ViewChild('email') emailkey!: ElementRef;
   hide: boolean = false;
 
-  loginForm: FormGroup = this.formbuild.group({
-    email: ['', [Validators.required, ]],
-    password: ['', [Validators.required, ]]
+  loginForm  = new FormGroup({
+    email: new FormControl ('',[
+                                 Validators.minLength(5),
+                                 Validators.maxLength(10),
+                                 Validators.required,
+                                // Validators.pattern()//
+                              ]),
+    password:new FormControl ('', [Validators.required,
+                                   Validators.minLength(5),
+                                   Validators.maxLength(10),
+                                  // Validators.pattern()//
+                                ])
   })
 
   
   onLogin() {
     localStorage.setItem("email",this.emailkey.nativeElement.value)
- //  this._user.ValidateUser(this.loginForm.value['email'],this.loginForm.value['password'])
-    if (this.loginForm.valid) {
-  // localStorage.setItem("email",this.loginForm.value["email"]);
-    //localStorage.setItem("password",this.loginForm.value["password"]);
-       alert('success')
-       this._rtr.navigate(['/sidenav'])
+     if (this.loginForm.valid) {
+        localStorage.setItem("email",this.loginForm.value["email"]);
+        localStorage.setItem("password",this.loginForm.value["password"]);
+        this._rtr.navigate(['/sidenav'])
      } else{
-      alert("error")
+      alert("please enter min length 5 and max length 10 ")
     }
     console.log(this.loginForm.value);
   }
