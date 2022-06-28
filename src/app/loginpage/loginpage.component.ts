@@ -26,6 +26,8 @@ export class LoginpageComponent implements OnInit {
                                    Validators.maxLength(10),
                                        // Validator.pattern//
                                            // Validator.pattern//
+                                    // Validator.pattern//
+                                    // Validator.pattern//
                                 ])
   })
 
