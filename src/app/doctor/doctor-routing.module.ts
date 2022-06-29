@@ -13,13 +13,14 @@ import { SupportComponent } from './support/support.component';
 
 
 const routes: Routes = [
+
   {path:"sidenav",component:SidenavComponent,children:[ {path:"mydoctors",component:MydoctorsComponent,children:[ {path:"about",component:AboutComponent}]}],},
   {path:"sidenav",component:SidenavComponent,children:[ {path:"mydoctors",component:MydoctorsComponent,children:[ {path:"clinic",component:ClinicComponent}]}],},
-  
+ 
   {path:"sidenav",component:SidenavComponent,children:[  {path:"home",component:HomeComponent,children:[  {path:"logout",component:LogoutComponent},]}]},
   {path:"sidenav",component:SidenavComponent,children:[  {path:"records",component:RecordsComponent}]},
   {path:"sidenav",component:SidenavComponent,children:[  {path:"appointment",component:AppointmentComponent}]},
-  {path:"sidenav",component:SidenavComponent,children:[ {path:"support",component:SupportComponent}]},
+  {path:"sidenav",component:SidenavComponent,children:[  {path:"support",component:SupportComponent}]},
   {path:"about",component:AboutComponent},
   {path:"logout",component:LogoutComponent},
   {path:"sidenav",component:SidenavComponent,children:[  {path:"home",component:HomeComponent,children:[{path:'mydoctors',component:MydoctorsComponent}]}]},

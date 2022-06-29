@@ -24,9 +24,8 @@ export class LoginpageComponent implements OnInit {
     password:new FormControl ('', [Validators.required,
                                    Validators.minLength(5),
                                    Validators.maxLength(10),
-                                     
-                                                
-                                  
+                                   //abcd//
+                                
                                 ])
   })
 
@@ -43,8 +42,7 @@ export class LoginpageComponent implements OnInit {
     console.log(this.loginForm.value);
   }
   
-  
-  constructor(private _user:AdminService, private formbuild: FormBuilder,private _rtr:Router) { }
+  constructor(private _user:AdminService,private _rtr:Router) { }
 
   ngOnInit(): void {
   }

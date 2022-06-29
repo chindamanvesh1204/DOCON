@@ -13,7 +13,8 @@ const routes: Routes = [
   {path:"test",component:TestComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'sidenav',component:SidenavComponent,canActivate:[LoginpageGuard]}, 
- // {path:"test" ,loadChildren:()=>import('./doctor/doctor.module').then(m=>m.DoctorModule)},
+
+  {path:"test1" ,loadChildren:()=>import('./doctor/doctor.module').then(m=>m.DoctorModule)},
 
 
 ];
