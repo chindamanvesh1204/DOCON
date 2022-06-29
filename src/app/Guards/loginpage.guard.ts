@@ -7,9 +7,12 @@ import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } fro
 export class LoginpageGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): boolean {
-
+    state: RouterStateSnapshot): any {
+      if(localStorage.getItem('email')==null && localStorage.getItem('password')==null){
+        return false
+      }else{
       return true;
+      }
   }
   
 }
